@@ -1,0 +1,24 @@
+/*
+Problem Statement:Create an ArrayList and add the following elements in it.White, Orange, Yellow, Green,andRed.
+Write a java program to check whether an element‘Red’ or ‘Orange’ is present in it or not? If it is present, 
+display the statement“Have dinner in a restaurant.”If it is not present, display the statement “Have dinner at home.”
+*/
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+      //Creating the arraylist with the given elements
+	    List<String> colors = Arrays.asList("White", "Orange", "Yellow", "Green","Red");
+      
+    //Checking arraylist contains Red or Orange
+		if(colors.contains("Red") || colors.contains("Orange")){
+		    System.out.println("Have dinner in a restaurant.");
+		}
+		else{
+		    System.out.println("Have dinner at home.");
+		}
+	
+	}
+}
